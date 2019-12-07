@@ -15,25 +15,16 @@ public class App
 
         int result=-1;
 
+
         try {
 
             LaptopService laptopService= new LaptopServiceImpl();
             StudentService studentService= new StudentServiceImpl();
 
-            Laptop laptop= new Laptop();
-            laptop.setName("Lenovo 120");
-            result=laptopService.addLaptop(laptop);
-
-            if(result>0){
-                System.out.println("laptop successfully saved with ID "+result);
-            }else{
-                System.out.println("Error occured while saving laptop");
-            }
 
             Student student= new Student();
-            student.setName("Kasun");
-            student.setMarks(85);
-            student.setLaptop(laptop);
+            student.setName("Hasitha");
+            student.setMarks(90);
             result=studentService.addStudent(student);
 
 
@@ -45,7 +36,27 @@ public class App
             }
 
 
+            Laptop laptop1= new Laptop();
+            laptop1.setName("Lenovo 120");
+            laptop1.setStudent(student);
+            result=laptopService.addLaptop(laptop1);
 
+            if(result>0){
+                System.out.println("laptop1 successfully saved with ID "+result);
+            }else{
+                System.out.println("Error occured while saving laptop1");
+            }
+
+            Laptop laptop2= new Laptop();
+            laptop2.setName("HP 630");
+            laptop2.setStudent(student);
+            result=laptopService.addLaptop(laptop2);
+
+            if(result>0){
+                System.out.println("laptop2 successfully saved with ID "+result);
+            }else{
+                System.out.println("Error occured while saving laptop2");
+            }
 
 
 
