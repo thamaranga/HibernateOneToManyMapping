@@ -1,24 +1,18 @@
-package com.hasitha.entity;
+package com.hasitha.onetomany.entity;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
-public class Laptop {
+public class Student {
 
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
     private int id;
     private String name;
-    @ManyToOne
-    private Student student;
-
-    public Student getStudent() {
-        return student;
-    }
-
-    public void setStudent(Student student) {
-        this.student = student;
-    }
+    private double marks;
+    @OneToMany(mappedBy = "student")
+    private List<Laptop> laptop;
 
     public int getId() {
         return id;
@@ -36,12 +30,28 @@ public class Laptop {
         this.name = name;
     }
 
+    public double getMarks() {
+        return marks;
+    }
+
+    public void setMarks(double marks) {
+        this.marks = marks;
+    }
+
+    public List<Laptop> getLaptop() {
+        return laptop;
+    }
+
+    public void setLaptop(List<Laptop> laptop) {
+        this.laptop = laptop;
+    }
+
     @Override
     public String toString() {
-        return "Laptop{" +
+        return "Student{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-
+                ", marks=" + marks +
                 '}';
     }
 }

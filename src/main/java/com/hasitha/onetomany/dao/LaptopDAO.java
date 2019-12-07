@@ -1,6 +1,6 @@
-package com.hasitha.dao;
+package com.hasitha.onetomany.dao;
 
-import com.hasitha.entity.Laptop;
+import com.hasitha.onetomany.entity.Laptop;
 import org.hibernate.HibernateException;
 
 public interface LaptopDAO {

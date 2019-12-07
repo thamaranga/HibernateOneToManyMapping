@@ -1,10 +1,8 @@
-package com.hasitha.dao.impl;
+package com.hasitha.onetomany.dao.impl;
 
-import com.hasitha.dao.LaptopDAO;
-import com.hasitha.dao.StudentDAO;
-import com.hasitha.entity.Laptop;
-import com.hasitha.entity.Student;
-import com.hasitha.util.HibernateUtil;
+import com.hasitha.onetomany.dao.StudentDAO;
+import com.hasitha.onetomany.util.HibernateUtil;
+import com.hasitha.onetomany.entity.Student;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.Transaction;

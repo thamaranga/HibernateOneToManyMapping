@@ -1,7 +1,7 @@
-package com.hasitha.service;
+package com.hasitha.onetomany.service;
 
 
-import com.hasitha.entity.Laptop;
+import com.hasitha.onetomany.entity.Laptop;
 import org.hibernate.HibernateException;
 
 public interface LaptopService {

@@ -1,8 +1,8 @@
-package com.hasitha.service.impl;
+package com.hasitha.onetomany.service.impl;
 
-import com.hasitha.dao.impl.StudentDAOImpl;
-import com.hasitha.entity.Student;
-import com.hasitha.service.StudentService;
+import com.hasitha.onetomany.dao.impl.StudentDAOImpl;
+import com.hasitha.onetomany.entity.Student;
+import com.hasitha.onetomany.service.StudentService;
 import org.hibernate.HibernateException;
 
 public class StudentServiceImpl implements StudentService {

@@ -1,11 +1,11 @@
-package com.hasitha;
+package com.hasitha.onetomany;
 
-import com.hasitha.entity.Laptop;
-import com.hasitha.entity.Student;
-import com.hasitha.service.LaptopService;
-import com.hasitha.service.StudentService;
-import com.hasitha.service.impl.LaptopServiceImpl;
-import com.hasitha.service.impl.StudentServiceImpl;
+import com.hasitha.onetomany.entity.Laptop;
+import com.hasitha.onetomany.entity.Student;
+import com.hasitha.onetomany.service.LaptopService;
+import com.hasitha.onetomany.service.StudentService;
+import com.hasitha.onetomany.service.impl.LaptopServiceImpl;
+import com.hasitha.onetomany.service.impl.StudentServiceImpl;
 
 
 public class App 

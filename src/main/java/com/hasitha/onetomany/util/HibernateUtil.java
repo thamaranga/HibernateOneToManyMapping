@@ -1,8 +1,8 @@
-package com.hasitha.util;
+package com.hasitha.onetomany.util;
 
 
-import com.hasitha.entity.Laptop;
-import com.hasitha.entity.Student;
+import com.hasitha.onetomany.entity.Laptop;
+import com.hasitha.onetomany.entity.Student;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
